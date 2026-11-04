@@ -2,6 +2,8 @@
 
 **Strategist: Evolving Reasoning with Agents.**
 
+![Strategist](assets/teaser.png)
+
 A model is only half of an agentic system. The other half is the inference strategy:
 the reasoning procedure that turns model calls into a response. Strategist is a
 meta-agent that designs that second half. Given a task and a small development set, it
