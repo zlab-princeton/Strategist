@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "strategist"
+version = "0.1.0"
+description = "Strategist: a meta-agent that evolves agentic reasoning strategies and accumulates them in a shared library."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "openai",
+  "anthropic",
+  "aiohttp",
+  "numpy",
+  "sentence-transformers",   # embedding half of library retrieval
+  "tiktoken",
+]
+
+[project.optional-dependencies]
+# Local executors (vLLM) and the tool-using `agent` primitive (OpenHands).
+serve = ["vllm", "openhands-ai"]
+dev = ["pytest"]
+
+[tool.setuptools.packages.find]
+include = ["strategist*"]
+
+[tool.setuptools.package-data]
+strategist = ["prompts/*.md", "prompts/personas/*.md"]

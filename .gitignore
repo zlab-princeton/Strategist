@@ -1,0 +1,26 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+
+# Runs and serving
+runs/
+strategist/logs/
+*.log
+
+# Task files (see strategist/data/README.md)
+strategist/data/*.jsonl
+
+# Caches rebuilt on demand
+strategist/.emb_cache*.npz
+strategist/library_hashes.json
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+*.swp
