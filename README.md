@@ -151,9 +151,9 @@ python -m pytest tests -q
 
 ```bibtex
 @misc{strategist,
-      title={Strategist: Evolving Reasoning with Agents}, 
-      author={Taiming Lu and Qi Xu and Zhigang Hua and Zhuang Liu},
-     booktitle = {Advances in Neural Information Processing Systems},
-     year      = {2026}
+   title={Strategist: Evolving Reasoning with Agents}, 
+   author={Taiming Lu and Qi Xu and Zhigang Hua and Zhuang Liu},
+   booktitle = {Advances in Neural Information Processing Systems},
+   year      = {2026}
 }
 ```
